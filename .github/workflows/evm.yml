@@ -1,12 +1,12 @@
-name: test
+name: evm
 
-on: workflow_dispatch
+on: pull_request
 
 env:
   FOUNDRY_PROFILE: ci
 
 jobs:
-  evm:
+  check:
     strategy:
       fail-fast: true
 
