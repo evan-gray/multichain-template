@@ -16,11 +16,12 @@ jobs:
   forge:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
       - name: Install Foundry
         uses: foundry-rs/foundry-toolchain@v1
         with:
           version: nightly
 
-      - name: Run Forge build
-        working-directory: ./evm
+      - name: Run Forge format
+        working-directory: evm
         run: forge fmt --check
