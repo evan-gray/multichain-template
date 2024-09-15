@@ -41,6 +41,7 @@ This repository serves as a template monorepo for developing on multiple blockch
       - Foundry project
       - forge
       - prettier
+      - spellcheck
   - Block force pushes
 - Restrictions [Enterprise Only]
   - Restrict commit metadata
