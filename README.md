@@ -6,10 +6,10 @@ This repository serves as a template monorepo for developing on multiple blockch
 
 ## Runtime Support
 
-[x] [EVM](https://ethereum.org/en/developers/docs/evm/)
-[x] [SVM](https://solana.com/developers/evm-to-svm/smart-contracts)
-[ ] [Sui Move](https://sui.io/move)
-[ ] [Aptos Move](https://aptos.dev/en/build/smart-contracts)
+- [x] [EVM](https://ethereum.org/en/developers/docs/evm/)
+- [x] [SVM](https://solana.com/developers/evm-to-svm/smart-contracts)
+- [ ] [Sui Move](https://sui.io/move)
+- [ ] [Aptos Move](https://aptos.dev/en/build/smart-contracts)
 
 ## Recommended GitHub Settings
 
@@ -51,3 +51,15 @@ This repository serves as a template monorepo for developing on multiple blockch
       - Matching pattern:
         - `^(ci|evm|svm|readme){1}(\([\w\-\.]+\))?(!)?: ([\w ])+([\s\S]*)` for file/folder prefixes
         - or `^(build|chore|ci|docs|feat|fix|perf|refactor|revert|style|test){1}(\([\w\-\.]+\))?(!)?: ([\w ])+([\s\S]*)` to [enforce conventional commits](https://docs.github.com/en/enterprise-cloud@latest/organizations/managing-organization-settings/creating-rulesets-for-repositories-in-your-organization#enforce-conventional-commits)
+
+## Recommended VSCode Settings
+
+Recommended VSCode settings and extensions have been included as workspace settings in this repository (`.vscode`).
+
+This includes:
+
+- Foundry's [forge formatting](https://book.getfoundry.sh/config/vscode#3-formatter)
+- [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+  - This should work after running `npm ci` at the root of this repo.
+
+Additional, related settings may be required based on your use.
